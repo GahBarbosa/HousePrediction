@@ -1,57 +1,52 @@
-# House Price Prediction - Machine Learning Project
-## Project Overview
-This project consists of developing a regression model capable of predicting house prices based on selected numerical features from the Ames Housing Dataset. The objective is to apply machine learning techniques, emphasizing data preprocessing, feature selection, model training, and evaluation.
+# Previsão de Preços de Imóveis
 
-## Dataset Description
-- Dataset: Ames Housing Dataset
-- Source: Kaggle - House Prices: Advanced Regression Techniques
-- Target Variable: SalePrice
+Este projeto tem como objetivo construir um modelo preditivo para estimar o preço de venda de imóveis com base em suas características estruturais e localização. Utilizando Machine Learning, este modelo busca fornecer estimativas precisas de preços para auxiliar no processo de compra, venda e avaliação de propriedades.
 
-## Tools & Libraries
-- Python 3.9+
-- Pandas - Data manipulation and analysis
-- NumPy - Numerical computing
-- Matplotlib / Seaborn - Data visualization
-- Scikit-learn - Machine learning models and evaluation
-- Jupyter Notebook - Interactive development environment
+## Visão Geral
 
-## Machine Learning Pipeline
-1. Data Loading & Exploration
-- Load dataset into a Pandas DataFrame
-- Exploratory Data Analysis (EDA) to understand feature distributions and correlations
+O modelo é treinado utilizando um conjunto de dados que inclui variáveis como metragem, qualidade da construção, número de cômodos, ano de construção e outras características dos imóveis. A abordagem de Machine Learning permite fazer previsões baseadas em dados históricos, identificando padrões que impactam o valor dos imóveis.
 
-2. Data Preprocessing
-- Handling missing values
-- Feature selection based on correlation and business understanding
-- Feature scaling (if necessary)
+## Objetivos
 
-3. Model Development
-- Algorithm: Linear Regression (as baseline)
-- Model fitting on the training set
-- Hyperparameter tuning (if applicable in advanced models)
+* Desenvolver um modelo preditivo que estime com precisão o preço de imóveis.
+* Analisar as variáveis que mais influenciam o preço de venda.
+* Avaliar o desempenho do modelo utilizando métricas como R², MAE (Erro Absoluto Médio) e RMSE (Erro Quadrático Médio).
+* Realizar a visualização dos resíduos para entender melhor o comportamento do modelo e identificar potenciais problemas.
 
-4. Model Evaluation
-- Performance metrics:
 
-5. Prediction
-- Generate predictions on the test set
-- Analyze residuals and error distribution
+## Como Executar o Projeto
 
-## Example of Model Metrics
+### Requisitos
 
-> Note: Results may vary depending on dataset split and random state.
+* Python 3.x
+* Bibliotecas:
 
-## How to Run the Project
-```BASH 
-git clone https://github.com/your-username/house-price-prediction.git
-cd house-price-prediction
-pip install -r requirements.txt
-jupyter notebook HousePricePrediction.ipynb
-```
+  * pandas
+  * numpy
+  * scikit-learn
+  * matplotlib
+  * seaborn
 
-## Future Improvements
-- Hyperparameter optimization with GridSearchCV
-- Deployment of the trained model via REST API (Flask/FastAPI)
+### Instalação
 
-## License
-This project is for educational and non-commercial use.
+1. Clone este repositório:
+
+   ```bash
+   git clone https://github.com/seu-usuario/projeto-previsao-precos-imoveis.git
+   ```
+
+2. Execute o notebook principal:
+
+   ```bash
+   jupyter notebook HousePricePrediction.ipynb
+   ```
+
+### Estrutura de Arquivos
+
+* `HousePricePrediction.ipynb`: Notebook com o código para análise de dados, treinamento do modelo e avaliação.
+* `data/`: Pasta contendo o arquivo de dados utilizado (`imoveis.csv` ou similar).
+* `requirements.txt`: Arquivo com as dependências do projeto.
+
+## Contribuições
+
+Contribuições são bem-vindas! Se você tem sugestões de melhorias ou novos recursos, por favor, envie um **pull request** ou crie uma **issue**.
